@@ -18,4 +18,9 @@ public class EmployeeController {
     public void uploadEmployees(@RequestParam("fileURL") String fileURL) throws Exception {
         employeeService.uploadEmployees(fileURL);
     }
+
+    @PostMapping("/update")
+    public void updateEmployees(@RequestParam("fileURL") String fileURL) throws Exception {
+        employeeService.updateEmployees(fileURL);
+    }
 }

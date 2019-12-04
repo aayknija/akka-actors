@@ -13,7 +13,7 @@ import static com.actors.config.SpringExtension.SPRING_EXTENSION_PROVIDER;
 
 @SpringBootApplication(exclude={DataSourceAutoConfiguration.class})
 @EnableMongoRepositories
-public class ActorsApplication {
+public class EmployeeApplication {
 
 	@Autowired
 	private ApplicationContext applicationContext;
@@ -26,7 +26,7 @@ public class ActorsApplication {
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(ActorsApplication.class, args);
+		SpringApplication.run(EmployeeApplication.class, args);
 	}
 
 }
